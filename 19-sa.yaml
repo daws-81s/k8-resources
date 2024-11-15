@@ -37,6 +37,7 @@ kind: Pod
 metadata:
   name: nginx
 spec:
+  serviceAccountName: secret-reader
   containers:
   # docker run -d --name nginx nginx
   - name: nginx
